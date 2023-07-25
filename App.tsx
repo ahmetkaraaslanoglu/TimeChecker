@@ -11,7 +11,9 @@ const App = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [region, setRegion] = useState('tr1');
   const regions = ['tr1', 'euw1', 'na1','br1','eun1','jp1','kr','la1','la2','oc1','ru','ph2','sg2','th2','tw2','vn2'];
-  const api_key = "RGAPI-b270de1e-e9da-4df7-a3c0-b373d2d3ccc9";
+
+  const api_key = "Your riot api key here (https://developer.riotgames.com/)";
+
   const [summonerDataUrl, setSummonerDataUrl] = useState(`https://${region}.api.riotgames.com/lol/summoner/v4/summoners/by-name/${username}?api_key=${api_key}`);
   const SPELL_COOLDOWNS = {
     "SummonerFlash.png": 300,
